@@ -8,16 +8,19 @@ If you're here from gitbook, I'm moving this guide to Github Pages, use this [**
 
 #### How does it work?
 
-So this procedure goes mainly like this
+So this procedure goes mainly like this:
 
-1. Download macOS recovery system \(as we can't do that directly from clover, yet\)
-2. Restore the macOS recovery system to the USB
-3. Install Clover to the USB
-4. Configure Clover \(config, Kexts and UEFI Drivers\)
-5. Boot macOS Recovery Environment
-6. Format and whatever you like to do in the macOS installer
-7. Install macOS
-8. BOOM! We're done.
+1. Create a USB drive with two partitions: one to hold the macOS "recovery system" and one to hold the Clover EFI files
+2. Download macOS recovery system using [gibMacOS](https://github.com/corpnewt/gibMacOS)
+3. Copy the macOS recovery system to the USB using Disk Utility's "restore" 
+4. Copy Clover files to the USB 
+5. Configure Clover with the proper config, Kexts and UEFI Drivers
+6. Insert the USB drive into the target computer, reboot into the boot menu and set certain BIOS options
+7. Allow the macOS Recovery disk to boot
+8. Format the target hard drive
+9. Install macOS onto the target hard drive
+10. After the installation completes, follow the post-install steps from [Vanilla Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/)
+11. BOOM! We're done.
 
 #### What will this guide cover?
 
